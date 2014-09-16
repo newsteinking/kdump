@@ -211,7 +211,7 @@ swap 명령은 시스템이 크래쉬되었을때 스왑 공간 영역을  표�
 
 ipcs  명령은 시스템이 크래쉬되었을때 공유 메모리 공간을  표시한다.
 
-    ::
+::
 
 
 
@@ -247,8 +247,11 @@ irq  명령은 시스템이 크래쉬되었을때 irq 상태를  표시한다.
 
 
 vtop – This command translates a user or kernel virtual address to its physical address.
-foreach – This command displays data for multiple tasks in the system
+
+foreach – This command displays data for multiple tasks in the system.
+
 waitq – This command displays all the tasks queued on a wait queue.
+
 
 
 13. View the Virtual Memory when System Crashed
@@ -297,19 +300,19 @@ sys  명령은 시스템이 크래쉬되었을때 시스템정보를     표시�
 ::
 
     crash> sys
-    KERNEL: /usr/lib/debug/lib/modules/2.6.32-431.5.1.el6.x86_64/vmlinux
-    DUMPFILE: /var/crash/127.0.0.1-2014-03-26-12:24:39/vmcore  [PARTIAL DUMP]
-    CPUS: 1
-    DATE: Wed Mar 26 12:24:36 2014
-    UPTIME: 00:01:32
-    LOAD AVERAGE: 0.17, 0.09, 0.03
-    TASKS: 159
-    NODENAME: elserver1.abc.com
-    RELEASE: 2.6.32-431.5.1.el6.x86_64
-    VERSION: #1 SMP Fri Jan 10 14:46:43 EST 2014
-    MACHINE: x86_64  (2132 Mhz)
-    MEMORY: 4 GB
-    PANIC: "Oops: 0002 [#1] SMP " (check log for details)
+        KERNEL: /usr/lib/debug/lib/modules/2.6.32-431.5.1.el6.x86_64/vmlinux
+        DUMPFILE: /var/crash/127.0.0.1-2014-03-26-12:24:39/vmcore  [PARTIAL DUMP]
+        CPUS: 1
+        DATE: Wed Mar 26 12:24:36 2014
+        UPTIME: 00:01:32
+        LOAD AVERAGE: 0.17, 0.09, 0.03
+        TASKS: 159
+        NODENAME: elserver1.abc.com
+        RELEASE: 2.6.32-431.5.1.el6.x86_64
+        VERSION: #1 SMP Fri Jan 10 14:46:43 EST 2014
+        MACHINE: x86_64  (2132 Mhz)
+        MEMORY: 4 GB
+        PANIC: "Oops: 0002 [#1] SMP " (check log for details)
 
 
 
