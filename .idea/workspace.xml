@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/docs/kdump/chapter1.rst" description="&#10;11. View IPCS when System Crashed" line="219" />
+    <bookmark url="file://$PROJECT_DIR$/docs/kdump/chapter1.rst" description="&#10;11. View IPCS when System Crashed" line="235" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93138f13-facb-49e8-84ce-4230e65b11fe" name="Default" comment="">
@@ -31,8 +31,8 @@
       <file leaf-file-name="chapter1.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/kdump/chapter1.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8043478" vertical-offset="4959" max-vertical-offset="5928">
-              <caret line="298" column="4" selection-start-line="298" selection-start-column="4" selection-end-line="298" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.14645308" vertical-offset="2399" max-vertical-offset="6308">
+              <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -536,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/kdump/chapter1.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8043478" vertical-offset="4959" max-vertical-offset="5928">
-          <caret line="298" column="4" selection-start-line="298" selection-start-column="4" selection-end-line="298" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.14645308" vertical-offset="2399" max-vertical-offset="6308">
+          <caret line="133" column="4" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
           <folding />
         </state>
       </provider>
