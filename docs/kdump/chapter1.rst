@@ -16,7 +16,7 @@ Kdump Anlaysis
 
    일단 kexec-tools 패키지의 일부인 kdump를 인스톨한다.
 
-.. code-block:: console
+    ::
 
     $ yum install kexec-tools
 
@@ -28,9 +28,9 @@ Kdump Anlaysis
 
    일단 패키지가 인스톨된후 /boot/grub/grub.conf 파일을 수정한다.
 
-.. code-block:: console
+    ::
 
-   $crashkernel=auto  nmi_watchdog=1
+    $crashkernel=auto  nmi_watchdog=1
 
 
    만약 메모리가 2G보다 작으면
@@ -48,9 +48,9 @@ Kdump Anlaysis
    커널이 크래쉬가 발생하게 되면 /etc/kdum.conf 화일에 설정된 내용에 때라 로컬 파일시스템내지 리모트 NFS에 캡쳐된다.
    이것은 kexec-tools 패키지가 인스톨되었으면 자동으로 생성된다.
 
+    ::
 
-
-# vi /etc/kdump.conf::
+    # vi /etc/kdump.conf::
     #raw /dev/sda5
     #ext4 /dev/sda3
     #ext4 LABEL=/boot
@@ -85,9 +85,9 @@ Kdump Anlaysis
    불필요한 정보를 필터링하는데 중요하다.
 
 
-.. code-block:: console
+    ::
 
-core_collector makedumpfile -c --message-level 1 -d 31 ::
+core_collector makedumpfile -c --message-level 1 -d 31
 
     makedumpfile specified in the core_collector actually makes a small DUMPFILE by compressing the data.
     makedumpfile provides two DUMPFILE formats (the ELF format and the kdump-compressed format).
@@ -103,8 +103,10 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 5. Restart kdump Services
 --------------------------------
 
-  kdump가 설정되면 kdump 서비스를 재시작 한다.::
+  kdump가 설정되면 kdump 서비스를 재시작 한다.
 
+
+    ::
 
     #chkconfig kdump on
     # service kdump restart
@@ -122,9 +124,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 6. Manually Trigger the Core Dump
 ------------------------------------
 
-   다음 명령을 통해 인위적으로 코어덤프를 만들 수 있다.::
+   다음 명령을 통해 인위적으로 코어덤프를 만들 수 있다.
 
-
+    ::
 
     echo 1 > /proc/sys/kernel/sysrq
     echo c > /proc/sysrq-trigger
@@ -136,10 +138,10 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 7. View the Core Files
 ------------------------------------
 
-   서버가 재시작 되었으면, 코아파일을 /var/crash/ 하위에 생성된 것을 볼 수 있을것이다.::
+   서버가 재시작 되었으면, 코아파일을 /var/crash/ 하위에 생성된 것을 볼 수 있을것이다.
 
 
-
+    ::
 
     # ls -lR /var/crash
     drwxr-xr-x. 2 root root 4096 Mar 26 11:06 127.0.0.1-2014-03-26-11:06:43
@@ -156,9 +158,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
    kdump에 의해서 생성된 코아파일은 crash 툴을 사용한다.
    이것은 또한 netdump,diskdump,xendump등에 의해서 생성된 코아파일도 분석할 수 있다.
 
-   아래와 같이 크래쉬 명령을 통해 시작한다.::
+   아래와 같이 크래쉬 명령을 통해 시작한다.
 
-
+    ::
 
     crash /var/crash/127.0.0.1-2014-09-16-14:47:55/vmcore  /home/sean/rpmbuild/BUILD/kernel-2.6.32-431.23.3.el6/
     linux-2.6.32-431.23.3.el6.x86_64/vmlinux
@@ -168,9 +170,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 9. View the Process when System Crashed
 ------------------------------------------
 
-   ps 명령은 시스템이 크래쉬되었을때 실행되고 있던 프로세스를 표시한다. ::
+   ps 명령은 시스템이 크래쉬되었을때 실행되고 있던 프로세스를 표시한다.
 
-
+    ::
 
 
     crash> ps
@@ -186,8 +188,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 10. View Swap space when System Crashed
 ------------------------------------------
 
-   swap 명령은 시스템이 크래쉬되었을때 스왑 공간 영역을  표시한다.::
+   swap 명령은 시스템이 크래쉬되었을때 스왑 공간 영역을  표시한다.
 
+    ::
 
     crash> swap
     FILENAME           TYPE         SIZE      USED   PCT  PRIORITY
@@ -198,9 +201,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 ------------------------------------------
 
 
-    ipcs  명령은 시스템이 크래쉬되었을때 공유 메모리 공간을  표시한다.::
+    ipcs  명령은 시스템이 크래쉬되었을때 공유 메모리 공간을  표시한다.
 
-
+    ::
 
     crash> ipcs
     SHMID_KERNEL     KEY      SHMID      UID   PERMS BYTES      NATTCH STATUS
@@ -217,9 +220,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 12. View IRQ when System Crashed
 ------------------------------------------
 
-    irq  명령은 시스템이 크래쉬되었을때 irq 상태를  표시한다.::
+    irq  명령은 시스템이 크래쉬되었을때 irq 상태를  표시한다.
 
-
+    ::
 
     crash> irq -s
            CPU0
@@ -242,9 +245,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 -------------------------------------------------
 
 
-    vm  명령은 시스템이 크래쉬되었을때 가상 메모리 사용량을   표시한다.::
+    vm  명령은 시스템이 크래쉬되었을때 가상 메모리 사용량을   표시한다.
 
-
+    ::
 
     crash> vm
     PID: 5210   TASK: ffff8801396f6aa0  CPU: 0   COMMAND: "bash"
@@ -260,9 +263,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 -------------------------------------------------
 
 
-    files  명령은 시스템이 크래쉬되었을때 열린 파일을    표시한다.::
+    files  명령은 시스템이 크래쉬되었을때 열린 파일을    표시한다.
 
-
+    ::
     crash> files
     PID: 5210   TASK: ffff8801396f6aa0  CPU: 0   COMMAND: "bash"
     ROOT: /    CWD: /root
@@ -277,9 +280,9 @@ core_collector makedumpfile -c --message-level 1 -d 31 ::
 -------------------------------------------------
 
 
-    sys  명령은 시스템이 크래쉬되었을때 시스템정보를     표시한다.::
+    sys  명령은 시스템이 크래쉬되었을때 시스템정보를     표시한다.
 
-
+     ::
     crash> sys
       KERNEL: /usr/lib/debug/lib/modules/2.6.32-431.5.1.el6.x86_64/vmlinux
     DUMPFILE: /var/crash/127.0.0.1-2014-03-26-12:24:39/vmcore  [PARTIAL DUMP]
