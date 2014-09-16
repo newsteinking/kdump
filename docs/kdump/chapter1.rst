@@ -112,7 +112,7 @@ Chapter 1:Introduction and Overview
  그림에서는 표시하지 않았지만 각각의 하위 시스템은 다양한 부수적인 방법으로 상호 작용을 한다는
  것을 명심하길 바란다.
 
-  .. image:: ./images/Fig1-1.png
+.. image:: ./images/Fig1-1.png
 
 
 1.3.1 Processes, Task Switching, and Scheduling
@@ -162,7 +162,7 @@ Chapter 1:Introduction and Overview
 아래 트리 구조로 보여진다.
 
 
- .. image:: ./images/Fig1-1_00000.jpg
+.. image:: ./images/Fig1-1_00000.jpg
 
 
   어떻게 이런 트리가 확장해가느냐는 새로운 프로세스가 어떻게 생성되어가느냐에 아주 밀접하게 연관이 있다.

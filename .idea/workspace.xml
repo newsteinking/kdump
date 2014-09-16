@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93138f13-facb-49e8-84ce-4230e65b11fe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-1_00000.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-5-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/images/Fig1-7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/chapter0.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/kdump/chapter1.rst" />
+      <change type="DELETED" beforePath="D:\AndroDev\workspace_billion\sean_online_github_kdump\kdump\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroDev\workspace_billion\sean_online_github_kdump\kdump\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroDev\workspace_billion\sean_online_github_kdump\kdump\.idea\kdump.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroDev\workspace_billion\sean_online_github_kdump\kdump\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroDev\workspace_billion\sean_online_github_kdump\kdump\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\AndroDev\workspace_billion\sean_online_github_kdump\kdump\.idea\vcs.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/kdump/chapter1.rst" afterPath="$PROJECT_DIR$/docs/kdump/chapter1.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.rst" afterPath="$PROJECT_DIR$/docs/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="kdump.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,11 +43,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conf.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="conf.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/conf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.1440187" vertical-offset="840" max-vertical-offset="5339">
+            <state vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="5339">
               <caret line="232" column="20" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.rst" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/index.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+              <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chapter1.rst" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/kdump/chapter1.rst">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33295193" vertical-offset="3547" max-vertical-offset="8759">
+              <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,6 +91,8 @@
         <option value="$PROJECT_DIR$/docs/_themes/kr/layout.html" />
         <option value="$PROJECT_DIR$/docs/conf.py" />
         <option value="$PROJECT_DIR$/docs/contents.rst.inc" />
+        <option value="$PROJECT_DIR$/docs/index.rst" />
+        <option value="$PROJECT_DIR$/docs/kdump/chapter1.rst" />
       </list>
     </option>
   </component>
@@ -138,6 +158,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kdump" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kdump" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kdump" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,22 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/kdump/chapter1.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8759">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/kdump/chapter0.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="874">
@@ -496,8 +518,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/conf.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.1440187" vertical-offset="840" max-vertical-offset="5339">
+        <state vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="5339">
           <caret line="232" column="20" selection-start-line="232" selection-start-column="20" selection-end-line="232" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <caret line="18" column="81" selection-start-line="18" selection-start-column="81" selection-end-line="18" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/kdump/chapter1.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33295193" vertical-offset="3547" max-vertical-offset="8759">
+          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
           <folding />
         </state>
       </provider>
