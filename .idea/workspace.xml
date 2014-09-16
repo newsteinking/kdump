@@ -31,8 +31,8 @@
       <file leaf-file-name="chapter1.rst" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/kdump/chapter1.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="5928">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.8043478" vertical-offset="4959" max-vertical-offset="5928">
+              <caret line="298" column="4" selection-start-line="298" selection-start-column="4" selection-end-line="298" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -536,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/kdump/chapter1.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="5928">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.8043478" vertical-offset="4959" max-vertical-offset="5928">
+          <caret line="298" column="4" selection-start-line="298" selection-start-column="4" selection-end-line="298" selection-end-column="4" />
           <folding />
         </state>
       </provider>

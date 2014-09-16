@@ -87,9 +87,9 @@ Kdump Anlaysis
 
     ::
 
-core_collector makedumpfile -c --message-level 1 -d 31
+    core_collector makedumpfile -c --message-level 1 -d 31
 
-    makedumpfile specified in the core_collector actually makes a small DUMPFILE by compressing the data.
+     makedumpfile specified in the core_collector actually makes a small DUMPFILE by compressing the data.
     makedumpfile provides two DUMPFILE formats (the ELF format and the kdump-compressed format).
     By default, makedumpfile makes a DUMPFILE in the kdump-compressed format.
     The kdump-compressed format can be read only with the crash utility, and it can be smaller than the ELF format because of the compression support.
@@ -143,7 +143,7 @@ core_collector makedumpfile -c --message-level 1 -d 31
 
     ::
 
-    # ls -lR /var/crash
+     # ls -lR /var/crash
     drwxr-xr-x. 2 root root 4096 Mar 26 11:06 127.0.0.1-2014-03-26-11:06:43
 
     /var/crash/127.0.0.1-2014-03-26-11:06:43:
@@ -163,7 +163,7 @@ core_collector makedumpfile -c --message-level 1 -d 31
     ::
 
     crash /var/crash/127.0.0.1-2014-09-16-14:47:55/vmcore  /home/sean/rpmbuild/BUILD/kernel-2.6.32-431.23.3.el6/
-    linux-2.6.32-431.23.3.el6.x86_64/vmlinux
+           linux-2.6.32-431.23.3.el6.x86_64/vmlinux
 
 
 
@@ -177,12 +177,12 @@ core_collector makedumpfile -c --message-level 1 -d 31
 
     crash> ps
     PID    PPID  CPU       TASK        ST  %MEM     VSZ    RSS  COMM
-      0      0   0  ffffffff81a8d020  RU   0.0       0      0  [swapper]
-      1      0   0  ffff88013e7db500  IN   0.0   19356   1544  init
-      2      0   0  ffff88013e7daaa0  IN   0.0       0      0  [kthreadd]
-      3      2   0  ffff88013e7da040  IN   0.0       0      0  [migration/0]
-      4      2   0  ffff88013e7e9540  IN   0.0       0      0  [ksoftirqd/0]
-      7      2   0  ffff88013dc19500  IN   0.0       0      0  [events/0]
+     0      0   0  ffffffff81a8d020  RU   0.0       0      0  [swapper]
+    1      0   0  ffff88013e7db500  IN   0.0   19356   1544  init
+    2      0   0  ffff88013e7daaa0  IN   0.0       0      0  [kthreadd]
+    3      2   0  ffff88013e7da040  IN   0.0       0      0  [migration/0]
+    4      2   0  ffff88013e7e9540  IN   0.0       0      0  [ksoftirqd/0]
+    7      2   0  ffff88013dc19500  IN   0.0       0      0  [events/0]
 
 
 10. View Swap space when System Crashed
@@ -226,13 +226,13 @@ core_collector makedumpfile -c --message-level 1 -d 31
 
     crash> irq -s
            CPU0
-      0:        149  IO-APIC-edge     timer
-      1:        453  IO-APIC-edge     i8042
-      7:          0  IO-APIC-edge     parport0
-      8:          0  IO-APIC-edge     rtc0
-      9:          0  IO-APIC-fasteoi  acpi
-     12:        111  IO-APIC-edge     i8042
-     14:        108  IO-APIC-edge     ata_piix
+        0:        149  IO-APIC-edge     timer
+        1:        453  IO-APIC-edge     i8042
+        7:          0  IO-APIC-edge     parport0
+        8:          0  IO-APIC-edge     rtc0
+        9:          0  IO-APIC-fasteoi  acpi
+        12:        111  IO-APIC-edge     i8042
+        14:        108  IO-APIC-edge     ata_piix
  .
  .
 
@@ -250,13 +250,13 @@ core_collector makedumpfile -c --message-level 1 -d 31
     ::
 
     crash> vm
-    PID: 5210   TASK: ffff8801396f6aa0  CPU: 0   COMMAND: "bash"
-       MM              		 PGD          RSS    TOTAL_VM
-    ffff88013975d880  ffff88013a0c5000  1808k   108340k
-      VMA           START       END     FLAGS FILE
-    ffff88013a0c4ed0     400000     4d4000 8001875 /bin/bash
-    ffff88013cd63210 3804800000 3804820000 8000875 /lib64/ld-2.12.so
-    ffff880138cf8ed0 3804c00000 3804c02000 8000075 /lib64/libdl-2.12.so
+        PID: 5210   TASK: ffff8801396f6aa0  CPU: 0   COMMAND: "bash"
+           MM              		 PGD          RSS    TOTAL_VM
+        ffff88013975d880  ffff88013a0c5000  1808k   108340k
+          VMA           START       END     FLAGS FILE
+        ffff88013a0c4ed0     400000     4d4000 8001875 /bin/bash
+       ffff88013cd63210 3804800000 3804820000 8000875 /lib64/ld-2.12.so
+       ffff880138cf8ed0 3804c00000 3804c02000 8000075 /lib64/libdl-2.12.so
 
 
 14. View the Open Files when System Crashed
@@ -267,12 +267,12 @@ core_collector makedumpfile -c --message-level 1 -d 31
 
     ::
     crash> files
-    PID: 5210   TASK: ffff8801396f6aa0  CPU: 0   COMMAND: "bash"
-    ROOT: /    CWD: /root
-    FD       FILE            DENTRY           INODE       TYPE PATH
-     0 ffff88013cf76d40 ffff88013a836480 ffff880139b70d48 CHR  /tty1
-      1 ffff88013c4a5d80 ffff88013c90a440 ffff880135992308 REG  /proc/sysrq-trigger
-    255 ffff88013cf76d40 ffff88013a836480 ffff880139b70d48 CHR  /tty1
+        PID: 5210   TASK: ffff8801396f6aa0  CPU: 0   COMMAND: "bash"
+        ROOT: /    CWD: /root
+        FD       FILE            DENTRY           INODE       TYPE PATH
+         0 ffff88013cf76d40 ffff88013a836480 ffff880139b70d48 CHR  /tty1
+          1 ffff88013c4a5d80 ffff88013c90a440 ffff880135992308 REG  /proc/sysrq-trigger
+        255 ffff88013cf76d40 ffff88013a836480 ffff880139b70d48 CHR  /tty1
     ..
 
 
@@ -283,20 +283,20 @@ core_collector makedumpfile -c --message-level 1 -d 31
     sys  명령은 시스템이 크래쉬되었을때 시스템정보를     표시한다.
 
      ::
-    crash> sys
-      KERNEL: /usr/lib/debug/lib/modules/2.6.32-431.5.1.el6.x86_64/vmlinux
-    DUMPFILE: /var/crash/127.0.0.1-2014-03-26-12:24:39/vmcore  [PARTIAL DUMP]
-        CPUS: 1
-        DATE: Wed Mar 26 12:24:36 2014
-      UPTIME: 00:01:32
-    LOAD AVERAGE: 0.17, 0.09, 0.03
-       TASKS: 159
-    NODENAME: elserver1.abc.com
-     RELEASE: 2.6.32-431.5.1.el6.x86_64
-     VERSION: #1 SMP Fri Jan 10 14:46:43 EST 2014
-     MACHINE: x86_64  (2132 Mhz)
-      MEMORY: 4 GB
-       PANIC: "Oops: 0002 [#1] SMP " (check log for details)
+     crash> sys
+       KERNEL: /usr/lib/debug/lib/modules/2.6.32-431.5.1.el6.x86_64/vmlinux
+        DUMPFILE: /var/crash/127.0.0.1-2014-03-26-12:24:39/vmcore  [PARTIAL DUMP]
+            CPUS: 1
+            DATE: Wed Mar 26 12:24:36 2014
+          UPTIME: 00:01:32
+        LOAD AVERAGE: 0.17, 0.09, 0.03
+           TASKS: 159
+        NODENAME: elserver1.abc.com
+         RELEASE: 2.6.32-431.5.1.el6.x86_64
+         VERSION: #1 SMP Fri Jan 10 14:46:43 EST 2014
+         MACHINE: x86_64  (2132 Mhz)
+          MEMORY: 4 GB
+           PANIC: "Oops: 0002 [#1] SMP " (check log for details)
 
 
 
