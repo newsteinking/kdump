@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'kdump'
+project = u'kdumpguide'
 copyright = u'2014. A <a href="http://kdump.readthedocs.org/en/latest/"> SEAN Linux </a> Project <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Linux GNU & Creative Commons Share-Alike 3.0 </a>'
 
 # The version info for the project you're documenting, acts as replacement for
