@@ -1,7 +1,7 @@
-Professional Linux Kernel Architecture
+ Linux Kernel kdump Analysis
 ---------------------------------------
 
- 본 문서는 리눅스 커널의 구조에 대해서 서술한다.
+ 본 문서는 리눅스 커널의 덤프 분석에 대해서 서술한다.
 
 .. toctree::
    :maxdepth: 2
